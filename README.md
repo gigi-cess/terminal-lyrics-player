@@ -4,8 +4,7 @@ Terminal audio player that shows a live, audio-reactive waveform beside CD-style
 
 Plays a local audio file and shows its lyrics in the terminal, with a waveform that responds to the audio in real time.
 
-Song Title: Self Aware
-Song Artist: Temper City
+Song Title: Self Aware | Song Artist: Temper City
 
 ### How it works
 
