@@ -1,0 +1,27 @@
+# SelfAware
+Terminal audio player that shows a live, audio-reactive waveform beside CD-style album art, with lyrics
+
+Plays a local audio file and shows its lyrics in the terminal, with a live waveform that reacts to the audio.
+
+### How it works
+
+- Plays the audio through `sounddevice` starting at a set offset (`START_SECONDS`).
+- Draws a waveform from the audio level of each block of samples.
+- Types each lyric at a timed delay so it lines up with the song.
+
+### Requirements
+
+- Python 3.8+
+- `pip install numpy sounddevice soundfile`
+- A terminal with ANSI color support (Windows Terminal, macOS Terminal, most Linux terminals)
+
+### Usage
+
+1. Place your own audio file and update `AUDIO_FILE` in the script.
+2. Edit the `lyrics` list and `delays` so they match your song's timing.
+3. Run `python self_aware_player.py` and press `Ctrl+C` to stop.
+
+### Notes
+
+- Audio files and full lyrics are copyrighted. Don't commit them to the repo. Use your own licensed files, or short example lines only.
+- Timing values are hand-tuned for one song and will need adjusting for others.
