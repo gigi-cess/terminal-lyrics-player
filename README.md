@@ -16,14 +16,17 @@ Song Title: Self Aware | Song Artist: Temper City
 
 - Python 3.8+
 - `pip install numpy sounddevice soundfile`
-- A terminal with ANSI color support (Windows Terminal, macOS Terminal, most Linux terminals)
+- A terminal with ANSI color support. On Windows, use Windows Terminal. The legacy Command Prompt may display colors and characters incorrectly.
 
 ### Usage
 
-1. Add your own WAV file to the project folder, for example `your-song.wav`. Audio files aren't included in this repo.
-2. Set `AUDIO_FILE` in `terminal_lyrics_player.py` to match the filename.
-3. Edit the `lyrics`, `delays`, and song metadata (`SONG_TITLE`, `SONG_ARTIST`, `SONG_ALBUM`) to match your song.
-4. Run `python terminal_lyrics_player.py` and press `Ctrl+C` to stop.
+1. Add your own WAV file to the project folder, for example `your-song.wav`. Audio files aren't included in this repo, and `.gitignore` keeps `*.wav` files out of version control.
+2. In `terminal_lyrics_player.py`, edit these settings to match your song:
+   - `AUDIO_FILE`: the path to your WAV file, such as `"your-song.wav"` or `"C:/Music/your-song.wav"`
+   - `SONG_TITLE`, `SONG_ARTIST`, `SONG_ALBUM`: the text shown beside the album art
+   - `START_SECONDS`: where playback begins
+   - `lyrics` and `delays`: your lyric lines and timing. Both lists must have the same number of entries.
+3. Run `python terminal_lyrics_player.py` and press `Ctrl+C` to stop.
 
 ### Notes
 
