@@ -17,9 +17,10 @@ Plays a local audio file and shows its lyrics in the terminal, with a live wavef
 
 ### Usage
 
-1. Place your own audio file and update `AUDIO_FILE` in the script.
-2. Edit the `lyrics` list and `delays` so they match your song's timing.
-3. Run `python self_aware_player.py` and press `Ctrl+C` to stop.
+1. Add your own WAV file to the project folder, for example `your-song.wav`. Audio files aren't included in this repo.
+2. Set `AUDIO_FILE` in `SelfAware.py` to match the filename.
+3. Edit the `lyrics`, `delays`, and song metadata (`SONG_TITLE`, `SONG_ARTIST`, `SONG_ALBUM`) to match your song.
+4. Run `python SelfAware.py` and press `Ctrl+C` to stop.
 
 ### Notes
 
