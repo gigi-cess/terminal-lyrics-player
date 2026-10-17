@@ -1,7 +1,11 @@
-# SelfAware
-Terminal audio player that shows a live, audio-reactive waveform beside CD-style album art, with lyrics
+# Terminal Lyrics Player
 
-Plays a local audio file and shows its lyrics in the terminal, with a live waveform that reacts to the audio.
+Terminal audio player that shows a live, audio-reactive waveform beside CD-style album art, with lyrics.
+
+Plays a local audio file and shows its lyrics in the terminal, with a waveform that responds to the audio in real time.
+
+Song Title: Self Aware
+Song Artist: Temper City
 
 ### How it works
 
@@ -18,11 +22,12 @@ Plays a local audio file and shows its lyrics in the terminal, with a live wavef
 ### Usage
 
 1. Add your own WAV file to the project folder, for example `your-song.wav`. Audio files aren't included in this repo.
-2. Set `AUDIO_FILE` in `SelfAware.py` to match the filename.
+2. Set `AUDIO_FILE` in `terminal_lyrics_player.py` to match the filename.
 3. Edit the `lyrics`, `delays`, and song metadata (`SONG_TITLE`, `SONG_ARTIST`, `SONG_ALBUM`) to match your song.
-4. Run `python SelfAware.py` and press `Ctrl+C` to stop.
+4. Run `python terminal_lyrics_player.py` and press `Ctrl+C` to stop.
 
 ### Notes
 
 - Audio files and full lyrics are copyrighted. Don't commit them to the repo. Use your own licensed files, or short example lines only.
 - Timing values are hand-tuned for one song and will need adjusting for others.
+- All songs, lyrics, and other copyrighted material mentioned or used belong to their rightful owners.
